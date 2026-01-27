@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Tailwind v4 theme tokens */
+@theme {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --color-muted: #d5d5d5;
+  --color-red: #c20203;
+
+  --radius-xl: 24px;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--color-bg);
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, "Inter", sans-serif;
+  color: var(--color-fg);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-red) 70%, black);
+  color: white;
+}
+
+/* Soft film grain without an image (pure CSS) */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.12;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.08) 0 1px, transparent 2px),
+    radial-gradient(circle at 70% 40%, rgba(255,255,255,.06) 0 1px, transparent 2px),
+    radial-gradient(circle at 40% 80%, rgba(255,255,255,.05) 0 1px, transparent 2px);
+  background-size: 120px 120px, 160px 160px, 200px 200px;
+  mix-blend-mode: overlay;
+  filter: blur(.2px);
+  transform: translateZ(0);
+  animation: grainMove 8s steps(8) infinite;
+}
+
+@keyframes grainMove {
+  0% { transform: translate(-2%, -2%); }
+  25% { transform: translate(2%, -1%); }
+  50% { transform: translate(1%, 2%); }
+  75% { transform: translate(-1%, 1%); }
+  100% { transform: translate(-2%, -2%); }
+}
+
+/* Subtle dust/scratches vibe */
+.specks {
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.08) 0 1px, transparent 2px);
+  background-size: 180px 180px;
+  background-position: 0 0;
+  opacity: .15;
+}
+
+/* Ghost big typography */
+.ghost {
+  -webkit-text-stroke: 1px rgba(255,255,255,.08);
+  color: rgba(255,255,255,.06);
+}

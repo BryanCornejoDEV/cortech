@@ -1,0 +1,36 @@
+export const site = {
+  brand: "CORTECH",
+  taglineLeft: "TECNOLOGÍA",
+  taglineRight: "QUE CUMPLE",
+  heroTitleA: "TECNOLOGÍA PARA",
+  heroTitleB: "QUIÉNES CONSTRUYEN",
+  ctaPrimary: "SOLICITAR COTIZACIÓN",
+  ctaSecondary: "VER CATÁLOGO",
+  email: "ventas@cortech.com",
+  phone: "+503 0000-0000",
+  address: "San Salvador, El Salvador",
+  images: {
+    hero: "/images/hero-msi-kv.webp",
+    services: "/images/services-asus.jpg",
+    cases: "/images/cases-asus.jpg",
+  },
+  values: [
+    { title: "CLARIDAD", desc: "Recomendaciones honestas y especificaciones claras." },
+    { title: "RAPIDEZ", desc: "Entrega ágil y soporte directo cuando lo necesitas." },
+    { title: "RESULTADOS", desc: "Tecnología alineada a productividad y rendimiento." },
+  ],
+  services: [
+    { title: "Portátiles + Estaciones de trabajo", desc: "Equipos para oficina, ingeniería y creación." },
+    { title: "Juegos + Rendimiento", desc: "Componentes y armados optimizados." },
+    { title: "Red + Seguridad", desc: "Routers, switches, Wi-Fi y refuerzo de seguridad." },
+    { title: "Periféricos + Configuración", desc: "Monitores, bases, teclados, audio y más." },
+    { title: "Compras para empresas", desc: "Cotizaciones para empresas y compras por volumen." },
+    { title: "Soporte + Garantía", desc: "Diagnóstico, mantenimiento y garantías." },
+  ],
+  faqs: [
+    { q: "¿Cuánto cuestan sus soluciones?", a: "Depende del objetivo y especificaciones. Te enviamos una cotización en 24–48h con alternativas." },
+    { q: "¿En cuánto tiempo recibiré mi pedido?", a: "Stock disponible: 24–72h. Importación: según producto. Siempre confirmamos tiempos antes de facturar." },
+    { q: "¿Ofrecen garantía?", a: "Sí. Garantía por marca y soporte Cortech para gestión rápida." },
+    { q: "¿Trabajan con empresas?", a: "Sí. Compras por volumen, factura y equipos preconfigurados." },
+  ],
+}
