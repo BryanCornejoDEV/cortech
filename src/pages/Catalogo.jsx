@@ -160,8 +160,7 @@ export default function Catalogo() {
         <Container>
           <SectionTitle
             kicker="CATÁLOGO"
-            title="Cards por producto"
-            right="Mismo estilo, animaciones suaves y enfoque a conversión."
+            title="Catálogo de productos"
           />
 
           <Motion.div
@@ -181,8 +180,7 @@ export default function Catalogo() {
             <div className="mt-12 rounded-[24px] border border-white/10 bg-black/40 p-6 backdrop-blur-xl">
               <div className="text-xs tracking-[0.28em] text-white/60">[ NOTA ]</div>
               <p className="mt-3 text-sm leading-relaxed text-white/65">
-                Si quieres que cada card tenga nombre/precio real, pásame la lista (o un CSV/Excel) y
-                lo dejamos dinámico. Por ahora usa las imágenes de <span className="text-white/80">/public/catalogo</span>.
+                Espacio para notas.
               </p>
             </div>
           </Reveal>
