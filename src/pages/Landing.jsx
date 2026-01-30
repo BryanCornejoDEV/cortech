@@ -145,8 +145,6 @@ export default function Landing() {
               <div className="rounded-[24px] border border-white/10 bg-black/45 p-6 backdrop-blur-xl">
                 <div className="text-xs tracking-[0.28em] text-white/60">[ RETO ] / 01</div>
                 <p className="mt-4 text-sm leading-relaxed text-white/70">
-                  Crear una landing de alto impacto para Cortech, enfocada en confianza, rendimiento
-                  y conversión: cotización rápida, catálogo y soporte.
                 </p>
               </div>
             </Reveal>
@@ -154,8 +152,6 @@ export default function Landing() {
               <div className="rounded-[24px] border border-white/10 bg-black/45 p-6 backdrop-blur-xl">
                 <div className="text-xs tracking-[0.28em] text-white/60">[ SOLUCIÓN ] / 02</div>
                 <p className="mt-4 text-sm leading-relaxed text-white/70">
-                  Diseño oscuro con acento rojo, tipografía masiva, grano/cinemático y módulos
-                  claros: servicios, casos, equipo, proceso y preguntas frecuentes, con animaciones suaves.
                 </p>
               </div>
             </Reveal>
