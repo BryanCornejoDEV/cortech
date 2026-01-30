@@ -9,7 +9,9 @@ export default function App() {
     <BrowserRouter>
       <NoiseOverlay />
       <Navbar />
-      <AppRoutes />
+      <div className="pt-16">
+        <AppRoutes />
+      </div>
       <Footer />
     </BrowserRouter>
   )

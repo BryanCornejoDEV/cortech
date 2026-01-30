@@ -8,6 +8,7 @@ import GlowBackdrop from "../components/common/GlowBackdrop"
 import Reveal from "../components/common/Reveal"
 import MarqueeGhost from "../components/common/MarqueeGhost"
 import DeviceMock from "../components/common/DeviceMock"
+import Three from "../components/common/Three"
 import { site } from "../config/site"
 
 function Pill({ children }) {
@@ -110,34 +111,15 @@ export default function Landing() {
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
               >
-                <div className="relative h-[420px] sm:h-[520px]">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,.08),transparent_55%)]" />
-                  <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(194,2,3,.30),transparent_40%,rgba(0,0,0,.85))]" />
+                <div className="relative h-[320px] sm:h-[420px]">
+                  {/* Fondo/atmósfera */}
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,.06),transparent_60%)]" />
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_55%_35%,color-mix(in_oklab,var(--color-red)_55%,transparent)_0%,transparent_60%)] opacity-70" />
+                  <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,.18),rgba(0,0,0,.55),rgba(0,0,0,.88))]" />
                   <div className="absolute inset-0 specks" />
 
-                  {/* “Escaleras” */}
-                  <div className="absolute inset-x-10 bottom-16 top-20 opacity-70">
-                    {Array.from({ length: 7 }).map((_, i) => (
-                      <div
-                        key={i}
-                        className="mx-auto mb-6 h-4 w-full max-w-[520px] rounded bg-white/10"
-                        style={{ opacity: 0.55 - i * 0.05 }}
-                      />
-                    ))}
-                  </div>
-
-                  {/* Silueta tech */}
-                  <div className="absolute inset-x-0 bottom-10 flex justify-center">
-                    <div className="relative">
-                      <div className="h-56 w-40 rounded-[28px] bg-[linear-gradient(to_bottom,rgba(194,2,3,.85),rgba(194,2,3,.30),rgba(0,0,0,.0))] blur-[0px]" />
-                      <div className="absolute -right-10 top-10 h-10 w-14 rounded-full bg-white/10 blur-[0px]" />
-                      <div className="absolute left-1/2 top-6 h-10 w-10 -translate-x-1/2 rounded-full bg-black/30 shadow-[inset_0_0_0_1px_rgba(255,255,255,.12)]" />
-                    </div>
-                  </div>
-
-                  <div className="absolute left-6 top-6 text-xs tracking-[0.22em] text-white/60">
-                    [ CORTECH ]
-                  </div>
+                  {/* Logo 3D (Three.js) */}
+                  <Three />
                 </div>
 
                 <div className="flex items-center justify-between gap-4 border-t border-white/10 p-5">
